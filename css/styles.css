@@ -526,7 +526,7 @@ ul {
 }
 
 .client-logo {
-  display: block;
+  display: flex;
   width: 170px;
   height: 90px;
 
