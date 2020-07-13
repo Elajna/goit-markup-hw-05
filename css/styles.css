@@ -686,12 +686,7 @@ ul {
 
 /* sineup */
 
-.sign-up {
-  width: 570px;
-  height: 86px;
-}
-
-.signup-form {
+.signup-field {
   display: flex;
   align-items: flex-end;
 }
