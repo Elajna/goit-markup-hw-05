@@ -64,7 +64,8 @@
           эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <a href="" class="hero-button">Заказать услугу</a>
+        <!-- <a href="" class="hero-button">Заказать услугу</a> -->
+        <button class="hero-button" data-modal-open>Заказать услугу</button>
       </section>
 
       <!--секция с графическим контентом-->
@@ -395,16 +396,43 @@
 
         <!--блок подписаться-->
         <div class="sign-up">
-          <h3 class="title">подпишитесь на рассылку</h3>
+          <!-- <h3 class="title">подпишитесь на рассылку</h3>
           <ul class="signup-buttons">
             <li class="item"><a href="" class="button">E-mail</a></li>
             <li class="item">
               <a href="" class="button primary">Подписаться</a>
             </li>
-          </ul>
+          </ul> -->
+          <form class="signup-form">
+            <div>
+              <label for="mail" class="title">Подписаться на рассылку</label>
+              <input
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="E-mail"
+                class="button"
+              />
+            </div>
+            <button type="submit" class="button primary">Подписаться</button>
+          </form>
         </div>
       </div>
       <p class="text">2020 | Developed by GoIT Students</p>
     </footer>
+
+    <!-- МОДАЛЬНОЕ ОКНО -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem velit,
+          saepe nulla quis quibusdam aliquam voluptatibus id sapiente obcaecati
+          maxime? Libero quia adipisci expedita et aspernatur porro molestias at
+          quisquam.
+        </p>
+        <button data-modal-close>закрыть</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
