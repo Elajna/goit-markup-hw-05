@@ -398,11 +398,11 @@
         <form class="form">
           <div class="signup-field">
             <div>
-              <label for="mail" class="title">Подписаться на рассылку</label>
+              <label for="email" class="title">Подписаться на рассылку</label>
               <input
                 type="email"
-                name="mail"
-                id="mail"
+                name="email"
+                id="email"
                 placeholder="E-mail"
                 class="button"
               />
@@ -416,15 +416,62 @@
 
     <!-- МОДАЛЬНОЕ ОКНО -->
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem velit,
-          saepe nulla quis quibusdam aliquam voluptatibus id sapiente obcaecati
-          maxime? Libero quia adipisci expedita et aspernatur porro molestias at
-          quisquam.
-        </p>
+      <form class="modal">
+        <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+        <div class="form-field">
+          <input
+            class="form-input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder=" "
+          />
+          <label class="form-lable" for="name">Имя</label>
+          <svg class="form-icon">
+            <use href="./img/sprite.svg#icon-envelope"></use>
+          </svg>
+        </div>
+
+        <!-- <li class="client-logo">
+              <svg class="logo-item five">
+                <use href="./img/sprite.svg#icon-logo-five"></use>
+              </svg>
+            </li> -->
+        <div class="form-field">
+          <input
+            class="form-input"
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder=" "
+          />
+          <label class="form-lable" for="phone">Телефон</label>
+        </div>
+
+        <div class="form-field">
+          <input
+            class="form-input"
+            type="email"
+            name="mail"
+            id="mail"
+            placeholder=" "
+          />
+          <label class="form-lable" for="mail">Почта</label>
+        </div>
+
+        <div class="form-field">
+          <textarea name="comment" id="comment"></textarea>
+          <label class="comment-lable" for="comment">Коментарий</label>
+        </div>
+
+        <div class="form-field">
+          <input type="checkbox" name="policy" id="policy" />
+          <label for="policy"
+            >Соглашаюсь с рассылкой и принимаю <a>Условия договора</a></label
+          >
+        </div>
         <button data-modal-close>закрыть</button>
-      </div>
+      </form>
     </div>
     <script src="./js/modal.js"></script>
   </body>
