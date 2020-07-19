@@ -115,6 +115,15 @@ ul {
   height: 18px;
 }
 
+.icon-item {
+  width: 18px;
+  height: 18px;
+}
+
+.form-input:focus ~ .form-icon {
+  fill: var(--accent-color);
+}
+
 .form-field textarea {
   height: 120px;
   resize: none;
